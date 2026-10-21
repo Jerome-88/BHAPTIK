@@ -105,8 +105,6 @@ export default function Tutorials({ onSelectTutorial }) {
                   >
                     {tutorial.difficulty}
                   </span>
-                  <span>•</span>
-                  <span>{tutorial.stepsCount} Langkah</span>
                 </div>
 
                 {/* Title & Subtitle */}
