@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>BHAPTIK - Seni Melipat Furoshiki Batik Indonesia</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS CDN -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Configuration -->
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            bhaptik: {
+              cream: '#FAF6F0',
+              beige: '#F4ECE1',
+              terracotta: '#C45A38',
+              terracottaHover: '#A84525',
+              navy: '#233246',
+              mustard: '#E2A748',
+              charcoal: '#1E293B',
+              muted: '#7A7165'
+            }
+          },
+          fontFamily: {
+            serif: ['"Playfair Display"', 'Georgia', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
+          },
+          boxShadow: {
+            'artisan': '0 12px 32px -8px rgba(78, 43, 24, 0.08)',
+            'card': '0 8px 24px -6px rgba(45, 30, 20, 0.07)'
+          }
+        }
+      }
+    }
+  </script>
+<!-- Custom Styles: Organic Curves & Motif Accents -->
+<style data-purpose="custom-shapes-and-motifs">
+    .bg-linen {
+      background-color: #FAF6F0;
+      background-image: radial-gradient(#d8ccba 0.75px, transparent 0.75px);
+      background-size: 24px 24px;
+    }
+
+    .organic-blob-terracotta {
+      border-radius: 46% 54% 68% 32% / 38% 47% 53% 62%;
+    }
+
+    .organic-blob-navy {
+      border-radius: 58% 42% 38% 62% / 49% 61% 39% 51%;
+    }
+
+    .organic-blob-mustard {
+      border-radius: 65% 35% 55% 45% / 42% 58% 42% 58%;
+    }
+
+    .card-zoom-img {
+      transition: transform 0.5s cubic-bezier(0.2, 0, 0.2, 1);
+    }
+    .group:hover .card-zoom-img {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body class="bg-bhaptik-cream text-bhaptik-charcoal font-sans antialiased min-h-screen selection:bg-bhaptik-terracotta selection:text-white">
+<!-- BEGIN: SiteHeader -->
+<header class="sticky top-0 z-50 bg-[#FAF6F0]/90 backdrop-blur-md border-b border-[#EADFCF]/70 transition-all duration-300" data-purpose="site-navigation-bar">
+<div class="max-w-7xl mx-auto px-6 lg:px-12 h-20 flex items-center justify-between">
+<!-- Brand Logo SVG -->
+<a aria-label="BHAPTIK Beranda" class="flex items-center gap-2 group focus:outline-none" href="#hero">
+<img alt="BHAPTIK Logo" class="h-10 w-auto object-contain transition-transform group-hover:scale-[1.02]" src="https://lh3.googleusercontent.com/aida/AEtjO1VXi9EV_weJO4xfYfuXDynvaLlch4tRIIqsR3J-c7br7uZ_j-1XPSfsttXeD4sp0sJ_B2md6n29IK_Da3sC2cCfnf5Y2Pz8VnJvCsNi3-1xE7OeZkbLmdGPkFe3IaaIpMt2FCHweQRlvADRMlqCk1TFVas7DrjxNbh1x8U3UNY87Qmku5XcNpi9cNYZZqDtOTb_F-h-SsLGMC4b32Dd0A8XWwhHqyWiXnQA6zFi1gemyLMGBlqcGk_WE5k"/>
+</a>
+<!-- Desktop Navigation Menu -->
+<nav aria-label="Main Navigation" class="hidden md:flex items-center gap-10">
+<a class="text-sm font-semibold tracking-wide text-bhaptik-charcoal hover:text-bhaptik-terracotta transition-colors duration-200" href="#tutorial">Tutorial</a>
+<a class="text-sm font-semibold tracking-wide text-bhaptik-charcoal/80 hover:text-bhaptik-terracotta transition-colors duration-200" href="#makna">Makna Batik</a>
+<a class="text-sm font-semibold tracking-wide text-bhaptik-charcoal/80 hover:text-bhaptik-terracotta transition-colors duration-200" href="#makna">Filosofi Kain</a>
+<a class="text-sm font-semibold tracking-wide text-bhaptik-charcoal/80 hover:text-bhaptik-terracotta transition-colors duration-200" href="#belanja">Belanja</a>
+</nav>
+<!-- Action Button -->
+<div class="flex items-center gap-4">
+<a class="hidden sm:inline-flex items-center justify-center text-xs font-bold uppercase tracking-wider px-5 py-2.5 rounded-full border border-bhaptik-terracotta/40 text-bhaptik-terracotta hover:bg-bhaptik-terracotta hover:text-white transition-all shadow-sm" href="#kapsul">
+          Scan QR Batik
+        </a>
+</div>
+</div>
+</header>
+<!-- END: SiteHeader -->
+<!-- BEGIN: MainContent -->
+<main>
+<!-- BEGIN: HeroSection -->
+<section class="relative overflow-hidden pt-8 pb-16 lg:py-20" data-purpose="hero-banner" id="hero">
+<!-- Background Abstract Blobs -->
+<div class="absolute inset-0 pointer-events-none -z-10 overflow-hidden">
+<div class="organic-blob-terracotta absolute -top-16 -left-16 w-80 h-80 bg-bhaptik-terracotta/15 blur-2xl"></div>
+<div class="organic-blob-navy absolute top-1/4 -right-20 w-96 h-96 bg-bhaptik-navy/10 blur-3xl"></div>
+<div class="organic-blob-mustard absolute -bottom-20 left-1/3 w-80 h-80 bg-bhaptik-mustard/15 blur-2xl"></div>
+<!-- Subtle Botanical Corner Illustration (Right) -->
+<svg class="absolute -right-12 top-6 w-56 h-56 text-[#D7C2AB]/40 stroke-current fill-none pointer-events-none hidden lg:block" viewbox="0 0 100 100">
+<path d="M90,10 Q50,40 20,90" stroke-width="0.8"></path>
+<path d="M55,36 Q70,25 78,12 Q65,30 55,36" stroke-width="0.6"></path>
+<path d="M42,50 Q28,40 18,35 Q30,52 42,50" stroke-width="0.6"></path>
+<path d="M30,70 Q45,62 55,50 Q36,68 30,70" stroke-width="0.6"></path>
+</svg>
+<!-- Subtle Botanical Corner Illustration (Left) -->
+<svg class="absolute -left-12 bottom-4 w-60 h-60 text-[#D7C2AB]/40 stroke-current fill-none pointer-events-none hidden lg:block" viewbox="0 0 100 100">
+<path d="M10,90 Q50,60 80,10" stroke-width="0.8"></path>
+<path d="M45,64 Q30,75 22,88 Q35,70 45,64" stroke-width="0.6"></path>
+<path d="M58,50 Q72,60 82,65 Q70,48 58,50" stroke-width="0.6"></path>
+</svg>
+</div>
+<div class="max-w-7xl mx-auto px-6 lg:px-12 relative">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+<!-- Hero Left Collage Image (Preview Bag) -->
+<div class="hidden lg:block lg:col-span-3 relative">
+<div class="relative group">
+<!-- Decorative Organic Underlay Shape -->
+<div class="absolute -inset-2 bg-gradient-to-tr from-bhaptik-mustard/40 to-bhaptik-terracotta/30 rounded-3xl -rotate-3 transition group-hover:rotate-0 duration-300"></div>
+<div class="relative rounded-2xl overflow-hidden shadow-artisan border-2 border-white/80 bg-white">
+<img alt="Tas Furoshiki Batik" class="w-full h-72 object-cover object-center card-zoom-img" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCHQvlVRXCSQa9d5t4YZZ1LWgJpbDH73wleVWcp-7z604T-oGyswma4yRai-cfjCaZUF8Yz6cjGjxFFVeu1xVizfShVgBaX5VDyE02VsH-RYC-XZ4R2BcY4HGw00mS7Ktn68DP3QdOxA7mFF_5G6adkcQpoTTYX8yCasrmd5XD1j37LpqIJHoRhFxOTtSwm1Pm1Ht7AqyKnKePkz-KmuHc6VUSL0w9_Oudb8GVDOOuyCEdb0EzJ8q4eWltKr5CulOu-gQ"/>
+<div class="absolute bottom-3 left-3 bg-[#FAF6F0]/90 backdrop-blur-md px-3 py-1.5 rounded-full text-xs font-semibold text-bhaptik-charcoal border border-[#E3D7C5]">
+                  Batik Tradisional
+                </div>
+</div>
+</div>
+<!-- Hand-drawn Curvy Arrow Doodle pointing toward center text -->
+<div class="absolute -right-10 top-12 hidden xl:block">
+<svg class="text-bhaptik-charcoal/70" fill="none" height="42" viewbox="0 0 68 42" width="68">
+<path d="M5 35 C 25 38, 48 25, 58 10" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2"></path>
+<path d="M48 6 L 60 9 L 58 20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</div>
+</div>
+<!-- Hero Central Copy -->
+<div class="lg:col-span-6 text-center px-2 sm:px-6">
+<span class="inline-block py-1 px-4 mb-4 rounded-full bg-bhaptik-terracotta/10 text-bhaptik-terracotta text-xs uppercase tracking-widest font-bold">
+              Kreativitas Berkelanjutan
+            </span>
+<h1 class="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold text-bhaptik-charcoal leading-[1.18] tracking-tight">
+              Ubah Kain <br/>
+<span class="italic font-normal font-serif text-bhaptik-terracotta">Jadi Apa Saja!</span>
+</h1>
+<p class="mt-5 text-base sm:text-lg text-bhaptik-muted max-w-lg mx-auto font-normal leading-relaxed">
+              Panduan kreatif melipat Furoshiki Batik menjadi tas, bungkus kado, dan aksesori harian.
+            </p>
+<div class="mt-8 flex flex-wrap items-center justify-center gap-4">
+<a class="inline-flex items-center justify-center px-8 py-3.5 rounded-full bg-bhaptik-terracotta text-white font-semibold text-base shadow-lg shadow-bhaptik-terracotta/25 hover:bg-bhaptik-terracottaHover transform hover:-translate-y-0.5 transition-all duration-200" href="#tutorial">
+                Mulai Melipat
+                <svg class="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2"></path>
+</svg>
+</a>
+<a class="inline-flex items-center justify-center px-6 py-3.5 rounded-full bg-white/80 hover:bg-white text-bhaptik-charcoal font-semibold text-base border border-[#E2D5C3] shadow-sm transition-all" href="#makna">
+                Pelajari Filosofi
+              </a>
+</div>
+</div>
+<!-- Hero Right Collage Elements (Stacked Furoshiki Gifts) -->
+<div class="hidden lg:block lg:col-span-3 space-y-4">
+<div class="relative group">
+<div class="absolute -inset-1.5 bg-bhaptik-navy/20 rounded-2xl rotate-2 transition group-hover:rotate-0 duration-300"></div>
+<div class="relative rounded-2xl overflow-hidden shadow-artisan border-2 border-white/80 bg-white">
+<img alt="Bungkus Kado Furoshiki" class="w-full h-44 object-cover object-center card-zoom-img" src="https://lh3.googleusercontent.com/aida/AEtjO1WyDVrDMOgYCtdfkQGCT8QuQwRKYPXFd28dbNOrWMO0bGZyvzTd6xe94qNioQLvtU2mLXcT8bWcJVFVgTtpmOpdRi-5Pv3pJXjsW6XppW9w5aMu0blVvhcB37Ue0sIsz_TlrZdQSVDqAPwk3GIcWi2TPJcp_QR_irvWlaCOYvHp6o2WXiQ5H410_xQtsE0ckJDtNfKg34x_UmwMpPC75V2MS94ryIEW28IoLYP1Gj7LziAbf_G78wpo2Q"/>
+</div>
+</div>
+<div class="relative group translate-x-3">
+<div class="absolute -inset-1.5 bg-bhaptik-terracotta/20 rounded-2xl -rotate-2 transition group-hover:rotate-0 duration-300"></div>
+<div class="relative rounded-2xl overflow-hidden shadow-artisan border-2 border-white/80 bg-white">
+<img alt="Bungkus Buku Furoshiki" class="w-full h-40 object-cover object-center card-zoom-img" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC4gkJ7jTAoe0s1PRRneVnBtOZn472gMVSoodZnPO0WFVPIe9KkST5nNRvQv5gyGQyaMvwnXcr1pCQ4GS-ZOuOi6J1XhjHpudpqH7bJxQ9RVfjoPNAICPDk-ORRFci7y7aQ32V3RiM88PSq-sBG7bseT6mOloJIVZGsZkO2DHeKxZ-U4O6QORxiEputHHzqlIwMewWYpBDq0jqMZGGNgEUeqISsGJQwETmYZ11HW9L_KMhsZfVM6BuF4HfLkhUQqEt-Nw"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: HeroSection -->
+<!-- BEGIN: TutorialSection -->
+<section class="py-12 lg:py-16 bg-[#FAF6F0]" data-purpose="folding-styles-and-tutorials" id="tutorial">
+<div class="max-w-7xl mx-auto px-6 lg:px-12">
+<!-- Header & Category Pills -->
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-6">
+<div>
+<span class="text-xs font-bold uppercase tracking-wider text-bhaptik-terracotta">Langkah Demi Langkah</span>
+<h2 class="font-serif text-3xl sm:text-4xl font-bold text-bhaptik-charcoal mt-1">Pilih Gaya Lipatanmu</h2>
+</div>
+<!-- Interactive Filter Tabs -->
+<div aria-label="Kategori Gaya Lipat" class="flex flex-wrap items-center gap-2 sm:gap-3" role="tablist">
+<button aria-selected="true" class="px-5 py-2 rounded-full text-xs sm:text-sm font-semibold bg-bhaptik-terracotta text-white shadow-sm transition hover:bg-bhaptik-terracottaHover" role="tab">
+              Semua
+            </button>
+<button aria-selected="false" class="px-5 py-2 rounded-full text-xs sm:text-sm font-medium bg-[#F1E7D9] text-bhaptik-charcoal hover:bg-[#E7DAC8] border border-[#DFCEB9]/60 transition" role="tab">
+              Tas Jinjing
+            </button>
+<button aria-selected="false" class="px-5 py-2 rounded-full text-xs sm:text-sm font-medium bg-[#F1E7D9] text-bhaptik-charcoal hover:bg-[#E7DAC8] border border-[#DFCEB9]/60 transition" role="tab">
+              Bungkus Kado
+            </button>
+<button aria-selected="false" class="px-5 py-2 rounded-full text-xs sm:text-sm font-medium bg-[#F1E7D9] text-bhaptik-charcoal hover:bg-[#E7DAC8] border border-[#DFCEB9]/60 transition" role="tab">
+              Membawa Botol
+            </button>
+<button aria-selected="false" class="px-5 py-2 rounded-full text-xs sm:text-sm font-medium bg-[#F1E7D9] text-bhaptik-charcoal hover:bg-[#E7DAC8] border border-[#DFCEB9]/60 transition" role="tab">
+              Aksesori
+            </button>
+</div>
+</div>
+<!-- Tutorials Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Card 1: Featured Bag (Tas Jinjing Bulat / Shizuku-tsutsumi) -->
+<div class="bg-white rounded-3xl p-5 shadow-card border border-[#EBE1D3] hover:shadow-xl transition-all duration-300 flex flex-col group" data-purpose="tutorial-card-featured">
+<!-- Media Container -->
+<div class="relative w-full h-64 rounded-2xl overflow-hidden bg-bhaptik-beige mb-5">
+<img alt="Tas Jinjing Bulat (Shizuku-tsutsumi)" class="w-full h-full object-cover card-zoom-img" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCHQvlVRXCSQa9d5t4YZZ1LWgJpbDH73wleVWcp-7z604T-oGyswma4yRai-cfjCaZUF8Yz6cjGjxFFVeu1xVizfShVgBaX5VDyE02VsH-RYC-XZ4R2BcY4HGw00mS7Ktn68DP3QdOxA7mFF_5G6adkcQpoTTYX8yCasrmd5XD1j37LpqIJHoRhFxOTtSwm1Pm1Ht7AqyKnKePkz-KmuHc6VUSL0w9_Oudb8GVDOOuyCEdb0EzJ8q4eWltKr5CulOu-gQ"/>
+<!-- Video / Step Indicator Icon Button -->
+<button aria-label="Putar Tutorial" class="absolute inset-0 m-auto w-12 h-12 rounded-full bg-white/90 backdrop-blur-sm text-bhaptik-terracotta flex items-center justify-center shadow-md transform group-hover:scale-110 transition duration-300">
+<svg class="w-5 h-5 fill-current ml-0.5" viewbox="0 0 24 24">
+<path d="M8 5v14l11-7z"></path>
+</svg>
+</button>
+<div class="absolute top-3 left-3 bg-bhaptik-charcoal/70 backdrop-blur-sm text-white text-[11px] font-semibold px-2.5 py-1 rounded-md">
+                Paling Populer
+              </div>
+</div>
+<!-- Card Meta -->
+<div class="flex items-center gap-2 text-xs font-semibold text-bhaptik-muted mb-2">
+<span class="inline-flex items-center px-2 py-0.5 rounded bg-emerald-50 text-emerald-700 font-medium">Mudah</span>
+<span>•</span>
+<span>5 Langkah</span>
+<span>•</span>
+<span>Kain 70x70cm</span>
+</div>
+<h3 class="font-serif text-xl font-bold text-bhaptik-charcoal mb-2 group-hover:text-bhaptik-terracotta transition-colors">
+              Tas Jinjing Bulat <span class="font-normal text-sm block text-bhaptik-muted">(Shizuku-tsutsumi)</span>
+</h3>
+<p class="text-sm text-bhaptik-muted line-clamp-2 mb-5">
+              Sempurna untuk belanja santai atau wadah bekal estetik tanpa jarum dan benang.
+            </p>
+<!-- Card Action Footer -->
+<div class="mt-auto pt-3 border-t border-[#F2ECE1] flex items-center justify-between">
+<a class="w-full py-2.5 rounded-xl bg-bhaptik-terracotta text-white text-center text-xs font-bold tracking-wide hover:bg-bhaptik-terracottaHover transition shadow-sm" href="#tutorial-detail-1">
+                Mulai Tutorial
+              </a>
+</div>
+</div>
+<!-- Card 2: Tas Buku Kuliah (Hon-tsutsumi) -->
+<div class="bg-white rounded-3xl p-5 shadow-card border border-[#EBE1D3] hover:shadow-xl transition-all duration-300 flex flex-col group" data-purpose="tutorial-card-book">
+<!-- Media Container -->
+<div class="relative w-full h-64 rounded-2xl overflow-hidden bg-bhaptik-beige mb-5">
+<img alt="Bandana &amp; Aksesori Rambut Sakura Batik" class="w-full h-full object-cover card-zoom-img" src="https://lh3.googleusercontent.com/aida-public/AB6AXuATyjecRJbglls9QAWlqFOXZ_D9smmVYB-JPQlU_mDpAo1uuZqNL942n9s0kTYVev1bzihx7HuZWB--kfHw1OcYUyuPl9zknLy9DzmZNSJffWFBe2D_PwcOXgbnGxDoB666TCTQA-7qp4T9ooJQJy7UaCQvGy9kOThqahaGZS1nleEgUu93TLwMwh4QNJFG8bFFLiVQeWT2pjfMBHjsKH9mFyMsiMsRGaR0q3S74KncKmMy0ViIeDNO5mrsMXiwuS8jhQ"/>
+<button aria-label="Putar Tutorial" class="absolute inset-0 m-auto w-12 h-12 rounded-full bg-white/90 backdrop-blur-sm text-bhaptik-terracotta flex items-center justify-center shadow-md transform group-hover:scale-110 transition duration-300">
+<svg class="w-5 h-5 fill-current ml-0.5" viewbox="0 0 24 24">
+<path d="M8 5v14l11-7z"></path>
+</svg>
+</button>
+</div>
+<!-- Card Meta -->
+<div class="flex items-center gap-2 text-xs font-semibold text-bhaptik-muted mb-2"><span class="inline-flex items-center px-2 py-0.5 rounded bg-emerald-50 text-emerald-700 font-medium">Mudah</span><span>•</span><span>3 Langkah</span><span>•</span><span>Kain 70x70cm</span></div>
+<h3 class="font-serif text-xl font-bold text-bhaptik-charcoal mb-2 group-hover:text-bhaptik-terracotta transition-colors">Bandana &amp; Aksesori <span class="font-normal text-sm block text-bhaptik-muted">(Bandana Furoshiki Style)</span></h3>
+<p class="text-sm text-bhaptik-muted line-clamp-2 mb-5">Kreasi bandana rambut dan scarf leher praktis bermotif sakura batik untuk sentuhan gaya harian.</p>
+<div class="mt-auto pt-3 border-t border-[#F2ECE1] flex items-center justify-between">
+<a class="w-full py-2.5 rounded-xl bg-[#F4ECE1] text-bhaptik-charcoal hover:bg-bhaptik-terracotta hover:text-white text-center text-xs font-bold tracking-wide transition shadow-sm" href="#tutorial-detail-2">
+                Mulai Tutorial
+              </a>
+</div>
+</div>
+<!-- Card 3: Bungkus Kado Klasik (Otsukai-tsutsumi) -->
+<div class="bg-white rounded-3xl p-5 shadow-card border border-[#EBE1D3] hover:shadow-xl transition-all duration-300 flex flex-col group" data-purpose="tutorial-card-gift">
+<!-- Media Container -->
+<div class="relative w-full h-64 rounded-2xl overflow-hidden bg-bhaptik-beige mb-5">
+<img alt="Bungkus Kado Klasik (Otsukai-tsutsumi)" class="w-full h-full object-cover card-zoom-img" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBViRzA5XCMQcbqXEChFFUJyHCr_rPA5y73-EhKocIL9FKojWFSmdMRpCgxj6J-EIzk7AvEGBcgTIsrIs4ShvhzEOAo4O0prrYDnjU7ryVMUSlfZsAHY5IphszVyMl42Petg_40Zusw6QBjNNHY94VbjRTdlOuJaLn7eJIMZzX2fK4pT1seYpmEaD4315pviVw1YDwiiQvsiG5kaExsXEZq-WFJ89_7yiLp4HdzyaEdjuSvIunu9uORD5zN0keI4fSREg"/>
+<button aria-label="Putar Tutorial" class="absolute inset-0 m-auto w-12 h-12 rounded-full bg-white/90 backdrop-blur-sm text-bhaptik-terracotta flex items-center justify-center shadow-md transform group-hover:scale-110 transition duration-300">
+<svg class="w-5 h-5 fill-current ml-0.5" viewbox="0 0 24 24">
+<path d="M8 5v14l11-7z"></path>
+</svg>
+</button>
+</div>
+<!-- Card Meta -->
+<div class="flex items-center gap-2 text-xs font-semibold text-bhaptik-muted mb-2"><span class="inline-flex items-center px-2 py-0.5 rounded bg-emerald-50 text-emerald-700 font-medium">Sangat Mudah</span><span>•</span><span>2 Langkah</span><span>•</span><span>Sakura x Batik</span></div>
+<h3 class="font-serif text-xl font-bold text-bhaptik-charcoal mb-2 group-hover:text-bhaptik-terracotta transition-colors">
+              Bungkus Kado Klasik <span class="font-normal text-sm block text-bhaptik-muted">(Otsukai-tsutsumi)</span>
+</h3>
+<p class="text-sm text-bhaptik-muted line-clamp-2 mb-5">
+              Simpul dasi kupu-kupu tradisional untuk menghadiahi bingkisan dengan makna doa tulus.
+            </p>
+<div class="mt-auto pt-3 border-t border-[#F2ECE1] flex items-center justify-between">
+<a class="w-full py-2.5 rounded-xl bg-[#F4ECE1] text-bhaptik-charcoal hover:bg-bhaptik-terracotta hover:text-white text-center text-xs font-bold tracking-wide transition shadow-sm" href="#tutorial-detail-3">
+                Mulai Tutorial
+              </a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: TutorialSection -->
+<!-- BEGIN: SecretMessageBanner -->
+<section class="py-16 bg-[#FAF6F0] border-t border-[#EBE1D3] relative overflow-hidden" data-purpose="philosophy-and-meaning-showcase" id="makna">
+<div class="max-w-7xl mx-auto px-6 lg:px-12 relative">
+<div class="relative overflow-hidden rounded-3xl bg-gradient-to-tr from-[#F4ECE1] via-[#FAF6F0] to-[#F1E7D9] p-8 md:p-12 shadow-artisan border border-[#DACBB7]">
+<!-- Subtle Background Accent -->
+<div class="absolute -right-16 -top-16 w-80 h-80 rounded-full bg-bhaptik-mustard/15 blur-3xl pointer-events-none"></div>
+<div class="absolute -left-12 -bottom-20 w-80 h-80 rounded-full bg-bhaptik-terracotta/10 blur-3xl pointer-events-none"></div>
+<div class="relative z-10">
+<!-- Top Section Header -->
+<div class="max-w-3xl mb-10">
+<div class="inline-flex items-center gap-2 bg-bhaptik-terracotta/10 border border-bhaptik-terracotta/20 px-3.5 py-1 rounded-full text-xs font-bold text-bhaptik-terracotta uppercase tracking-wider mb-3">
+<span class="w-2 h-2 rounded-full bg-bhaptik-terracotta"></span>
+HARMONI DUA TRADISI · JEPANG &amp; NUSANTARA
+</div>
+<h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-bhaptik-charcoal leading-tight">
+Filosofi &amp; Makna di Balik Helai Kain
+</h2>
+<p class="mt-4 text-base text-bhaptik-charcoal/80 font-normal leading-relaxed">
+Lebih dari sekadar pembungkus, Furoshiki Batik memadukan filosofi Wabi-Sabi Jepang (menghargai ketidakteraturan alami dan kesederhanaan fungsional) dengan kedalaman doa sakral batik Nusantara.
+</p>
+</div>
+<!-- Educational Grid Showcase -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+<!-- Left Column: Dual Philosophy Comparison Cards -->
+<div class="lg:col-span-7 flex flex-col justify-between gap-6">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+<!-- Pillar 1: Furoshiki Japan -->
+<div class="bg-white rounded-2xl p-6 border border-[#E3D7C5] shadow-sm flex flex-col justify-between">
+<div>
+<div class="w-10 h-10 rounded-xl bg-bhaptik-navy/10 text-bhaptik-navy flex items-center justify-center font-bold text-lg mb-4">
+⛩
+</div>
+<span class="text-[11px] font-bold uppercase tracking-wider text-bhaptik-muted block mb-1">Filosofi Tsutsumi</span>
+<h3 class="font-serif text-lg font-bold text-bhaptik-charcoal leading-snug mb-2">
+Seni Furoshiki Jepang: Menghormati Yang Diberi &amp; Bumi
+</h3>
+<p class="text-xs text-bhaptik-muted leading-relaxed">
+Membungkus dengan ketulusan hati tanpa menghasilkan sampah plastik, menghargai setiap lekuk bentuk dan objek berharga yang dibawa.
+</p>
+</div>
+<div class="mt-4 pt-3 border-t border-[#F2ECE1] text-[11px] font-semibold text-bhaptik-terracotta flex items-center gap-1.5">
+<span>✦</span> Wabi-Sabi &amp; Nol Sampah (Mottainai)
+</div>
+</div>
+<!-- Pillar 2: Batik Sakura & Kawung -->
+<div class="bg-white rounded-2xl p-6 border border-[#E3D7C5] shadow-sm flex flex-col justify-between">
+<div>
+<div class="w-10 h-10 rounded-xl bg-bhaptik-terracotta/15 text-bhaptik-terracotta flex items-center justify-center font-bold text-lg mb-4">
+🌸
+</div>
+<span class="text-[11px] font-bold uppercase tracking-wider text-bhaptik-muted block mb-1">Doa Sakral Nusantara</span>
+<h3 class="font-serif text-lg font-bold text-bhaptik-charcoal leading-snug mb-2">
+Motif Sakura &amp; Kawung: Doa Kesucian &amp; Awal Baru
+</h3>
+<p class="text-xs text-bhaptik-muted leading-relaxed">
+Bunga sakura melambangkan keindahan musim semi dan ketulusan, berpadu dengan motif Kawung geometris perlambang empat penjuru mata angin dan keluhuran budi.
+</p>
+</div>
+<div class="mt-4 pt-3 border-t border-[#F2ECE1] text-[11px] font-semibold text-bhaptik-terracotta flex items-center gap-1.5">
+<span>✦</span> Suci, Adil &amp; Penuh Harapan
+</div>
+</div>
+</div>
+<!-- Action Buttons & Eco Note -->
+<div class="bg-white/80 rounded-2xl p-5 border border-[#E2D5C3] flex flex-col sm:flex-row items-center justify-between gap-4">
+<div class="flex flex-wrap items-center gap-3 w-full sm:w-auto">
+<a class="px-6 py-2.5 rounded-full bg-bhaptik-terracotta hover:bg-bhaptik-terracottaHover text-white text-xs font-semibold shadow-sm transition text-center flex-1 sm:flex-initial" href="#makna">
+Pelajari Ragam Motif Nusantara
+</a>
+<a class="px-5 py-2.5 rounded-full bg-[#FAF6F0] hover:bg-white text-bhaptik-charcoal text-xs font-semibold border border-[#DACBB7] transition text-center flex-1 sm:flex-initial" href="#tutorial">
+Simak Panduan Merawat Kain
+</a>
+</div>
+<span class="text-[11px] text-bhaptik-muted font-medium text-center sm:text-right">
+Warisan lestari bernapas modern
+</span>
+</div>
+</div>
+<!-- Right Column: Illustrated Textile Showcase & Craftsmanship Specs -->
+<div class="lg:col-span-5 flex flex-col">
+<div class="bg-white rounded-2xl p-5 border border-[#E2D5C3] shadow-card flex flex-col h-full">
+<div class="relative w-full h-56 rounded-xl overflow-hidden border border-[#EBE1D3] mb-4 bg-bhaptik-beige group">
+<img alt="Bentangan Motif Furoshiki Batik Sakura" class="w-full h-full object-cover card-zoom-img" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAsXqA63gJMkznLHu307p2MkIBzj9LzQwHVF_XuC3rf4VKfaLzcT0DmrXjLbDiaHBFxCMamm6x3qvLu0vvFHAUfxkSmnZgRruvA1aBoiH7vkWcQMIOm3I9u-EnzShaOR45HXDY5aZtDR0TnEn5LGZLJpexX2KQH7cO7FM8dONMIEum-IrCyw45ipJ6cjd2QZi_5-YD8r32-AQBbeEJiYb2OiVqwgCw8A8oE9Ftf2yraTlkfs6pTNMry2ZcyWahBQsAcnw"/>
+<div class="absolute bottom-2.5 left-2.5 bg-bhaptik-charcoal/80 backdrop-blur-sm text-white text-[11px] font-medium px-3 py-1 rounded-full">
+Bentang Kain 70 x 70 cm
+</div>
+</div>
+<!-- Craft Details Points -->
+<div class="space-y-2 mb-4">
+<div class="flex items-center gap-2 text-xs text-bhaptik-charcoal font-medium">
+<span class="text-bhaptik-terracotta font-bold">✓</span>
+<span>Pewarnaan Ramah Lingkungan</span>
+</div>
+<div class="flex items-center gap-2 text-xs text-bhaptik-charcoal font-medium">
+<span class="text-bhaptik-terracotta font-bold">✓</span>
+<span>Jahitan Rapi Wolsum / Standar Furoshiki</span>
+</div>
+<div class="flex items-center gap-2 text-xs text-bhaptik-charcoal font-medium">
+<span class="text-bhaptik-terracotta font-bold">✓</span>
+<span>Dapat Dilipat Ulang Seumur Hidup</span>
+</div>
+</div>
+<!-- Cultural Quote -->
+<div class="mt-auto p-3.5 bg-[#FAF6F0] rounded-xl border border-dashed border-[#DACBB7] text-center">
+<p class="font-serif italic text-xs text-bhaptik-charcoal/90 leading-relaxed">
+“Bungkus bukan untuk dibuang, tapi untuk diwariskan dan dirajut kembali.”
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: SecretMessageBanner -->
+</main>
+<!-- END: MainContent -->
+<!-- BEGIN: SiteFooter -->
+<footer class="bg-[#211A16] text-[#D8CEBF] py-14 border-t border-[#3A2E26]" data-purpose="site-footer">
+<div class="max-w-7xl mx-auto px-6 lg:px-12 grid grid-cols-1 md:grid-cols-4 gap-10">
+<!-- Brand & Mission -->
+<div class="md:col-span-1">
+<div class="text-2xl font-serif font-bold text-white tracking-widest mb-3">BHAPTIK</div>
+<p class="text-xs leading-relaxed text-[#A99D8D]">
+          Memadukan kearifan kain batik nusantara dengan tradisi ramah lingkungan Furoshiki. Mengurangi limbah kemasan, merajut kebaikan.
+        </p>
+</div>
+<!-- Quick Links -->
+<div>
+<h4 class="text-xs font-bold uppercase tracking-wider text-white mb-4">Navigasi Tutorial</h4>
+<ul class="space-y-2 text-xs">
+<li><a class="hover:text-white transition" href="#tutorial">Tas Jinjing Bulat</a></li>
+<li><a class="hover:text-white transition" href="#tutorial">Pembungkus Botol (Bin-tsutsumi)</a></li>
+<li><a class="hover:text-white transition" href="#tutorial">Tas Buku Kuliah (Hon-tsutsumi)</a></li>
+<li><a class="hover:text-white transition" href="#tutorial">Bungkus Kado Klasik</a></li>
+</ul>
+</div>
+<!-- Philosophy & Culture -->
+<div>
+<h4 class="text-xs font-bold uppercase tracking-wider text-white mb-4">Makna Motif Batik</h4>
+<ul class="space-y-2 text-xs">
+<li><a class="hover:text-white transition" href="#makna">Parang Rusak - Pantang Menyerah</a></li>
+<li><a class="hover:text-white transition" href="#makna">Kawung - Kesucian &amp; Harapan</a></li>
+<li><a class="hover:text-white transition" href="#makna">Mega Mendung - Ketenangan</a></li>
+<li><a class="hover:text-white transition" href="#makna">Truntum - Kasih yang Tumbuh</a></li>
+</ul>
+</div>
+<!-- Newsletter / Craft note -->
+<div>
+<h4 class="text-xs font-bold uppercase tracking-wider text-white mb-4">Kapsul Waktu</h4>
+<p class="text-xs text-[#A99D8D] mb-3">Daftarkan kainmu untuk menerima inspirasi pola lipat bulanan.</p>
+<div class="flex">
+<input class="w-full text-xs px-3 py-2 bg-[#2D241F] text-white border border-[#483930] rounded-l-lg focus:outline-none focus:border-bhaptik-terracotta" placeholder="Email Anda" type="email"/>
+<button class="bg-bhaptik-terracotta hover:bg-bhaptik-terracottaHover text-white text-xs px-4 rounded-r-lg font-semibold transition">Kirim</button>
+</div>
+</div>
+</div>
+<!-- Copyright -->
+<div class="max-w-7xl mx-auto px-6 lg:px-12 mt-12 pt-6 border-t border-[#332720] text-center text-[11px] text-[#867B6E]">
+      © 2025 BHAPTIK Indonesia. Dibuat dengan cinta untuk warisan kain nusantara.
+    </div>
+</footer>
+<!-- END: SiteFooter -->
+<!-- Interactivity Script for Category Tabs (Minimal, Vanilla) -->
+<script data-purpose="tab-filtering-interactions">
+    document.addEventListener('DOMContentLoaded', () => {
+      const tabs = document.querySelectorAll('[role="tab"]');
+      tabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+          // Reset styles
+          tabs.forEach(t => {
+            t.classList.remove('bg-bhaptik-terracotta', 'text-white');
+            t.classList.add('bg-[#F1E7D9]', 'text-bhaptik-charcoal');
+            t.setAttribute('aria-selected', 'false');
+          });
+          // Set active
+          tab.classList.remove('bg-[#F1E7D9]', 'text-bhaptik-charcoal');
+          tab.classList.add('bg-bhaptik-terracotta', 'text-white');
+          tab.setAttribute('aria-selected', 'true');
+        });
+      });
+    });
+  </script>
+</body></html>
