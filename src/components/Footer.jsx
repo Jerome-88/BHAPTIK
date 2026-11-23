@@ -5,6 +5,7 @@ export default function Footer() {
   const sections = [
     { label: 'Beranda', href: '#hero' },
     { label: 'Spesifikasi Kain', href: '#spesifikasi' },
+    { label: 'Pilihan Koleksi & Harga', href: '#koleksi' },
     { label: 'Tutorial Lipat', href: '#tutorial' },
     { label: 'Filosofi Batik', href: '#makna' },
     { label: 'Tentang BHAPTIK', href: '#tentang' },

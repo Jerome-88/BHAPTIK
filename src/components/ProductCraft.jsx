@@ -11,11 +11,11 @@ export default function ProductCraft() {
   const craftFeatures = [
     {
       icon: 'ph:bounding-box-duotone',
-      title: 'Pilihan Ukuran S, M, & L',
-      subtitle: 'Standar Serbaguna Bujur Sangkar',
+      title: 'Tiga Ukuran Multi-Fungsi',
+      subtitle: 'S (47cm), M (72cm), & L (96cm)',
       description:
-        'Hadir dalam 3 ukuran presisi: S (47×47 cm) untuk bandana/aksesori, M (72×72 cm) untuk bekal bento & kado, serta L (96×96 cm) untuk tas jinjing fleksibel tanpa sisa kain berlebih.',
-      badge: 'Bujur Sangkar Simetris'
+        'Setiap ukuran kain dirancang fleksibel untuk bebas Anda bentuk menjadi apa saja—tas jinjing, wadah bekal, aksesoris pakaian, maupun hantaran. Skala ukuran menentukan volume benda yang ingin Anda bawa.',
+      badge: 'Fleksibilitas Tanpa Batas'
     },
     {
       icon: 'ph:drop-half',

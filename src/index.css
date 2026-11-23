@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  font-family: "Manrope", system-ui, sans-serif;
+  font-family: "Plus Jakarta Sans", system-ui, sans-serif;
   color: #29231f;
   background: #faf7f2;
   font-synthesis: none;
@@ -28,7 +28,7 @@ body {
   overflow-x: hidden;
   background: var(--cream);
   color: var(--ink);
-  font-family: "Manrope", system-ui, sans-serif;
+  font-family: "Plus Jakarta Sans", system-ui, sans-serif;
 }
 
 #root { width: 100%; min-height: 100vh; }
@@ -42,15 +42,14 @@ a:focus-visible {
 }
 
 h1, h2, h3, h4, h5, h6,
-.font-serif, .font-morganite, .font-display {
-  font-family: "Cormorant Garamond", Georgia, serif !important;
+.font-serif, .font-display {
+  font-family: "Playfair Display", Georgia, serif !important;
   font-style: normal;
-  letter-spacing: -.025em !important;
 }
 
 .font-sans,
 body, p, li, a, button, input, textarea, select, label, small {
-  font-family: "Manrope", system-ui, sans-serif !important;
+  font-family: "Plus Jakarta Sans", system-ui, sans-serif !important;
 }
 
 ::selection { color: white; background: var(--orange); }
@@ -140,28 +139,9 @@ body, p, li, a, button, input, textarea, select, label, small {
 
 .hero-title {
   max-width: 720px;
-  margin-top: 1.3rem !important;
-  font-size: clamp(6rem, 8.5vw, 8.25rem) !important;
-  font-weight: 600 !important;
-  line-height: .76 !important;
-  overflow-wrap: anywhere;
-}
-
-.hero-title__line { display: block; }
-
-.hero-title .hero-accent {
-  color: var(--orange) !important;
-  font-weight: 600 !important;
-}
-
-.hero-title .heritage-display {
-  margin-top: .12em;
-  font-family: "Macondo", "Cormorant Garamond", Georgia, serif !important;
-  font-size: 1.08em;
-  font-weight: 400 !important;
-  line-height: .78;
-  letter-spacing: -.045em !important;
-  text-shadow: 0 2px 0 rgba(116, 48, 27, .08);
+  font-family: "Playfair Display", Georgia, serif !important;
+  font-weight: 700 !important;
+  line-height: 1.15 !important;
 }
 
 .hero-intro {

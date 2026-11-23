@@ -41,13 +41,22 @@ export default function Hero({ onStartTutorial }) {
             transition={{ staggerChildren: 0.1, delayChildren: 0.08 }}
           >
 
+            <motion.div
+              variants={fadeUp}
+              transition={{ duration: 0.45 }}
+              className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#C85A32]/10 border border-[#C85A32]/20 text-[#C85A32] text-xs font-semibold tracking-wider uppercase font-sans"
+            >
+              <Icon icon="ph:sparkle-fill" className="text-xs" />
+              <span>Furoshiki Bermotif Batik × Jepang</span>
+            </motion.div>
+
             <motion.h1
               variants={fadeUp}
               transition={{ duration: 0.65, ease: [0.22, 1, 0.36, 1] }}
-              className="hero-title font-serif font-bold text-5xl sm:text-6xl lg:text-7xl text-[#2B2523] leading-[1.04] tracking-wide not-italic"
+              className="hero-title font-serif font-bold text-4xl sm:text-5xl lg:text-6xl text-[#2B2523] leading-[1.12] tracking-tight not-italic"
             >
-              <span className="hero-title__line">Timeless</span>
-              <span className="hero-title__line hero-accent heritage-display">Heritage</span>
+              Satu Kain, <br className="hidden sm:inline" />
+              <span className="text-[#C85A32] italic font-serif">Banyak Gaya.</span>
             </motion.h1>
 
             <motion.p
@@ -55,7 +64,7 @@ export default function Hero({ onStartTutorial }) {
               transition={{ duration: 0.55, ease: [0.22, 1, 0.36, 1] }}
               className="hero-intro text-base sm:text-lg text-stone-700 leading-relaxed max-w-xl font-sans not-italic"
             >
-              Lebih dari sekadar pembungkus, Furoshiki menghormati benda dan alam melalui kain yang digunakan berulang kali. Batik melengkapinya dengan doa, keteguhan, dan harapan baik dalam setiap guratan canting.
+              Mampir, pegang bahannya, dan coba ikat sendiri. Selembar kain serbaguna yang luwes bertransformasi menjadi tas jinjing, wadah bekal, aksesoris, hingga hantaran hadiah—menghormati alam tanpa kantong plastik sekali pakai.
             </motion.p>
 
             <motion.div
@@ -63,7 +72,11 @@ export default function Hero({ onStartTutorial }) {
               transition={{ duration: 0.55, ease: [0.22, 1, 0.36, 1] }}
               className="hero-actions pt-2 flex flex-wrap items-center gap-3"
             >
-              <a href="#tutorial" onClick={onStartTutorial} className="button-primary inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-[#C85A32] text-white font-medium text-sm hover:bg-[#A84420] transition-colors shadow-sm cursor-pointer">
+              <a href="#koleksi" className="button-primary inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-[#C85A32] text-white font-medium text-sm hover:bg-[#A84420] transition-colors shadow-sm cursor-pointer">
+                <Icon icon="ph:tag-bold" className="text-base" />
+                <span>Lihat Koleksi &amp; Harga</span>
+              </a>
+              <a href="#tutorial" onClick={onStartTutorial} className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-[#F5F0EB] text-[#2B2523] border border-[#E6DFD5] font-medium text-sm hover:bg-[#EAE4DC] hover:border-[#C85A32]/60 transition-colors shadow-sm cursor-pointer">
                 <span>Eksplorasi Gaya Lipatan</span>
                 <Icon icon="ph:arrow-right-bold" className="text-base" />
               </a>

@@ -8,6 +8,7 @@ export default function Navbar({ onOpenQR, qrEnabled = false }) {
   const navLinks = [
     { label: 'Tutorial Lipat', href: '#tutorial' },
     { label: 'Spesifikasi Produk', href: '#spesifikasi' },
+    { label: 'Koleksi & Harga', href: '#koleksi' },
     { label: 'Makna Batik', href: '#makna' },
     { label: 'Tentang Usaha', href: '#tentang' },
   ];

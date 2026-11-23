@@ -6,10 +6,10 @@ export const TUTORIALS = [
     category: 'Tas Jinjing',
     difficulty: 'Mudah',
     stepsCount: 5,
-    clothSize: 'Kain 96×96 cm (Gelora L)',
+    clothSize: 'Ideal untuk Size L (atau M & S)',
     image: '/images/tas.jpg',
     youtubeUrl: 'https://youtu.be/Jmp0JxnccMU?si=trgYRHi7TSX7RAVs',
-    badge: 'Paling Populer',
+    badge: 'Populer',
     description: 'Tas jinjing praktis berpadu motif Gelora (Parang × Nami) untuk belanja santai dan aktivitas harian tanpa jahitan.',
     steps: [
       {
@@ -46,11 +46,11 @@ export const TUTORIALS = [
     category: 'Aksesori',
     difficulty: 'Mudah',
     stepsCount: 3,
-    clothSize: 'Kain 47×47 cm (Mekar S)',
+    clothSize: 'Ideal untuk Size S (atau M & L)',
     image: '/images/bandana.jpg',
     youtubeUrl: 'https://youtu.be/9vAKh46O1bw?si=J2YXcShLBxj6jVqV',
-    badge: 'Tren Modern',
-    description: 'Kreasi bandana rambut dan scarf leher praktis bermotif Mekar (Kawung × Sakura) untuk sentuhan gaya anggun.',
+    badge: 'Aksesoris',
+    description: 'Kreasi bandana rambut dan scarf leher praktis bermotif Mekar (Kawung × Sakura) — salah satu dari puluhan kreasi fleksibel kain ukuran S.',
     steps: [
       {
         number: 1,
@@ -76,11 +76,11 @@ export const TUTORIALS = [
     category: 'Bungkus Kado',
     difficulty: 'Sangat Mudah',
     stepsCount: 2,
-    clothSize: 'Kain 72×72 cm (Kelana M)',
+    clothSize: 'Ideal untuk Size M (atau S & L)',
     image: '/images/burung - bento.png',
     youtubeUrl: 'https://youtu.be/dIW7OQeN_kE?si=s20rI-KGkcYx_B5w',
-    badge: 'Elegan',
-    description: 'Simpul dasi kupu-kupu tradisional berpadu motif Kelana (Mega Mendung × Tsuru) untuk membungkus bento atau bingkisan istimewa.',
+    badge: 'Klasik',
+    description: 'Simpul dasi kupu-kupu tradisional berpadu motif Kelana (Mega Mendung × Tsuru) untuk membungkus bento, kado, atau wadah apa pun.',
     steps: [
       {
         number: 1,

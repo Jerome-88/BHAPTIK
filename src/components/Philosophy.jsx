@@ -95,9 +95,16 @@ export default function Philosophy() {
                     <Icon icon="ph:map-pin-duotone" className="text-base" />
                     <span>Asal-usul: {selectedMotif.origin}</span>
                   </div>
-                  <h4 className="font-serif font-bold text-3xl text-[#2B2523] mb-1 leading-snug not-italic">
-                    {selectedMotif.name}
-                  </h4>
+                  <div className="flex flex-wrap items-baseline gap-3 mb-1">
+                    <h4 className="font-serif font-bold text-3xl text-[#2B2523] leading-snug not-italic">
+                      {selectedMotif.name}
+                    </h4>
+                    {selectedMotif.price && (
+                      <span className="text-xs font-bold text-[#C85A32] bg-[#C85A32]/10 px-3 py-1 rounded-full border border-[#C85A32]/25 font-sans">
+                        {selectedMotif.price}
+                      </span>
+                    )}
+                  </div>
                   <div className="text-xs text-stone-600 font-sans not-italic">
                     {selectedMotif.tagline}
                   </div>
