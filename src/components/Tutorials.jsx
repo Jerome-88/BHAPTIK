@@ -11,7 +11,35 @@ export default function Tutorials({ onSelectTutorial }) {
     : TUTORIALS.filter(item => item.category === activeCategory);
 
   return (
-    <section className="py-16 lg:py-24 bg-[#FDFBF7]" id="tutorial">
+    <section className="relative py-16 lg:py-24 bg-[#FDFBF7] overflow-hidden" id="tutorial">
+      {/* Subtle Javanese Batik Kawung Vector Accent */}
+      <div className="absolute inset-0 pointer-events-none select-none opacity-[0.07]" aria-hidden="true">
+        <svg
+          className="absolute -right-16 -top-16 w-[450px] h-[450px] text-[#C85A32]"
+          viewBox="0 0 200 200"
+          fill="none"
+          stroke="currentColor"
+        >
+          <g strokeWidth="1.2">
+            <ellipse cx="100" cy="60" rx="35" ry="18" />
+            <ellipse cx="100" cy="140" rx="35" ry="18" />
+            <ellipse cx="60" cy="100" rx="18" ry="35" />
+            <ellipse cx="140" cy="100" rx="18" ry="35" />
+            <ellipse cx="100" cy="60" rx="18" ry="9" strokeDasharray="3 3" strokeWidth="0.8" />
+            <ellipse cx="100" cy="140" rx="18" ry="9" strokeDasharray="3 3" strokeWidth="0.8" />
+            <ellipse cx="60" cy="100" rx="9" ry="18" strokeDasharray="3 3" strokeWidth="0.8" />
+            <ellipse cx="140" cy="100" rx="9" ry="18" strokeDasharray="3 3" strokeWidth="0.8" />
+            <circle cx="100" cy="100" r="6" fill="currentColor" fillOpacity="0.25" />
+          </g>
+          <g strokeWidth="1" transform="translate(150, 150) scale(0.6)">
+            <ellipse cx="100" cy="60" rx="35" ry="18" />
+            <ellipse cx="100" cy="140" rx="35" ry="18" />
+            <ellipse cx="60" cy="100" rx="18" ry="35" />
+            <ellipse cx="140" cy="100" rx="18" ry="35" />
+            <circle cx="100" cy="100" r="6" fill="currentColor" fillOpacity="0.25" />
+          </g>
+        </svg>
+      </div>
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
         
         {/* Header & Filter Tabs */}

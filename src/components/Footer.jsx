@@ -59,16 +59,18 @@ export default function Footer() {
             </p>
             <div className="space-y-3">
               <a
-                href="mailto:hello@bhaptik.id"
+                href="https://wa.me/6281317883988"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="flex items-center gap-3 text-sm text-[#E6DFD5]/80 hover:text-white transition-colors"
               >
                 <span className="w-9 h-9 rounded-full border border-white/10 bg-white/5 flex items-center justify-center text-[#E9A37F]">
-                  <Icon icon="ph:envelope-simple-duotone" className="text-lg" />
+                  <Icon icon="ph:whatsapp-logo-duotone" className="text-lg" />
                 </span>
-                <span>hello@bhaptik.id</span>
+                <span>081317883988</span>
               </a>
               <a
-                href="https://instagram.com/bhaptik.id"
+                href="https://www.instagram.com/bhaptik/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-3 text-sm text-[#E6DFD5]/80 hover:text-white transition-colors"
@@ -76,7 +78,7 @@ export default function Footer() {
                 <span className="w-9 h-9 rounded-full border border-white/10 bg-white/5 flex items-center justify-center text-[#E9A37F]">
                   <Icon icon="ph:instagram-logo-duotone" className="text-lg" />
                 </span>
-                <span>@bhaptik.id</span>
+                <span>@bhaptik</span>
               </a>
             </div>
           </div>

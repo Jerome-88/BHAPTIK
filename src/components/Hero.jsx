@@ -10,6 +10,28 @@ const fadeUp = {
 export default function Hero({ onStartTutorial }) {
   return (
     <section className="hero-section relative overflow-hidden py-12 lg:py-20" id="hero">
+      {/* Subtle Javanese Batik Kawung Vector Accent */}
+      <div className="absolute inset-0 pointer-events-none select-none opacity-[0.08]" aria-hidden="true">
+        <svg
+          className="absolute -top-12 -left-12 w-[420px] h-[420px] text-[#C85A32]"
+          viewBox="0 0 200 200"
+          fill="none"
+          stroke="currentColor"
+        >
+          <g strokeWidth="1.2">
+            <ellipse cx="100" cy="60" rx="35" ry="18" />
+            <ellipse cx="100" cy="140" rx="35" ry="18" />
+            <ellipse cx="60" cy="100" rx="18" ry="35" />
+            <ellipse cx="140" cy="100" rx="18" ry="35" />
+            <ellipse cx="100" cy="60" rx="20" ry="10" strokeDasharray="2 2" strokeWidth="0.8" />
+            <ellipse cx="100" cy="140" rx="20" ry="10" strokeDasharray="2 2" strokeWidth="0.8" />
+            <ellipse cx="60" cy="100" rx="10" ry="20" strokeDasharray="2 2" strokeWidth="0.8" />
+            <ellipse cx="140" cy="100" rx="10" ry="20" strokeDasharray="2 2" strokeWidth="0.8" />
+            <circle cx="100" cy="100" r="8" fill="currentColor" fillOpacity="0.2" />
+            <circle cx="100" cy="100" r="3" fill="currentColor" />
+          </g>
+        </svg>
+      </div>
       <div className="hero-frame max-w-7xl mx-auto px-6 lg:px-12 relative">
         <div className="hero-grid grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           <motion.div
@@ -61,8 +83,8 @@ export default function Hero({ onStartTutorial }) {
               transition={{ duration: 0.35, ease: 'easeOut' }}
             >
               <img
-                src="/images/batik-spread.jpg"
-                alt="Bentangan helai kain batik furoshiki BHAPTIK 70x70 cm"
+                src="/images/tas.jpg"
+                alt="Tas jinjing Furoshiki batik BHAPTIK motif Gelora (Parang × Nami)"
                 className="w-full h-full object-cover card-zoom-img"
               />
             </motion.div>

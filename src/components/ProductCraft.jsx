@@ -11,10 +11,10 @@ export default function ProductCraft() {
   const craftFeatures = [
     {
       icon: 'ph:bounding-box-duotone',
-      title: 'Dimensi Presisi 70 × 70 cm',
+      title: 'Pilihan Ukuran S, M, & L',
       subtitle: 'Standar Serbaguna Bujur Sangkar',
       description:
-        'Ukuran standar dalam tradisi pelipatan kain. Proporsi bujur sangkar simetris yang pas untuk membawa botol, buku, atau dijadikan tas jinjing harian tanpa kelebihan sisa kain yang mengganjal.',
+        'Hadir dalam 3 ukuran presisi: S (47×47 cm) untuk bandana/aksesori, M (72×72 cm) untuk bekal bento & kado, serta L (96×96 cm) untuk tas jinjing fleksibel tanpa sisa kain berlebih.',
       badge: 'Bujur Sangkar Simetris'
     },
     {
@@ -45,6 +45,30 @@ export default function ProductCraft() {
 
   return (
     <section className="relative py-16 lg:py-24 bg-[#F5F0EB]/60 border-t border-[#E6DFD5] overflow-hidden" id="spesifikasi">
+
+      {/* Subtle Javanese Batik Parang & Kawung Vector Background */}
+      <div className="absolute inset-0 pointer-events-none select-none opacity-[0.07]" aria-hidden="true">
+        <svg
+          className="absolute right-0 top-1/2 -translate-y-1/2 w-[500px] h-[500px] text-[#C85A32]"
+          viewBox="0 0 300 300"
+          fill="none"
+          stroke="currentColor"
+        >
+          <g strokeWidth="1.5" strokeLinecap="round">
+            <path d="M50,0 Q80,40 60,80 T70,160 T80,240 T90,320" />
+            <path d="M110,0 Q140,40 120,80 T130,160 T140,240 T150,320" strokeDasharray="4 4" strokeWidth="1" />
+            <path d="M170,0 Q200,40 180,80 T190,160 T200,240 T210,320" />
+            <path d="M230,0 Q260,40 240,80 T250,160 T260,240 T270,320" strokeDasharray="4 4" strokeWidth="1" />
+          </g>
+          <g strokeWidth="1.2" transform="translate(160, 80)">
+            <ellipse cx="50" cy="25" rx="22" ry="11" />
+            <ellipse cx="50" cy="75" rx="22" ry="11" />
+            <ellipse cx="25" cy="50" rx="11" ry="22" />
+            <ellipse cx="75" cy="50" rx="11" ry="22" />
+            <circle cx="50" cy="50" r="4" fill="currentColor" fillOpacity="0.3" />
+          </g>
+        </svg>
+      </div>
 
       <div className="max-w-7xl mx-auto px-6 lg:px-12 relative">
 
@@ -120,8 +144,8 @@ export default function ProductCraft() {
             <div className="bg-[#FDFBF7] rounded-2xl p-5 border border-[#E6DFD5] shadow-sm">
               <div className="relative rounded-xl overflow-hidden border border-[#E6DFD5] aspect-[4/3] bg-[#F5F0EB]">
                 <img
-                  src="/images/batik-spread.jpg"
-                  alt="Detail fisik kain katun rayon viscose dan jahit neci BHAPTIK"
+                  src="/images/burung.jpg"
+                  alt="Detail kain Furoshiki Batik BHAPTIK motif Kelana (Mega Mendung × Tsuru)"
                   className="w-full h-full object-cover card-zoom-img"
                 />
               </div>
@@ -133,8 +157,8 @@ export default function ProductCraft() {
                   <span className="font-semibold text-[#2B2523]">Katun Rayon Viscose 100%</span>
                 </div>
                 <div className="flex items-center justify-between py-1.5 border-b border-[#E6DFD5]">
-                  <span className="text-stone-500 font-medium">Dimensi Kain</span>
-                  <span className="font-semibold text-[#2B2523]">70 × 70 cm Presisi</span>
+                  <span className="text-stone-500 font-medium">Pilihan Ukuran</span>
+                  <span className="font-semibold text-[#2B2523]">S (47×47cm) · M (72×72cm) · L (96×96cm)</span>
                 </div>
                 <div className="flex items-center justify-between py-1.5 border-b border-[#E6DFD5]">
                   <span className="text-stone-500 font-medium">Finishing Tepian</span>

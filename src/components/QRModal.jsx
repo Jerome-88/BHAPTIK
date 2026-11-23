@@ -11,20 +11,20 @@ export default function QRModal({ isOpen, onClose, onSelectTutorialByName }) {
   const sampleFabrics = [
     {
       id: 'kain-1',
-      name: 'Kain Furoshiki Kawung 70cm',
-      serial: 'BHP-KWNG-7026',
-      origin: 'Solo - Kasunanan Surakarta',
+      name: 'Mekar (Kawung × Sakura) 47cm',
+      serial: 'BHP-MKR-4701',
+      origin: 'Akulturasi Batik Kawung & Sakura',
       material: 'Katun Rayon Viscose (Jahit Neci Wolsum)',
-      recommendedTutorial: 'Tas Jinjing Bulat',
+      recommendedTutorial: 'Bandana & Aksesori Rambut',
       icon: 'ph:flower-tulip-duotone'
     },
     {
       id: 'kain-2',
-      name: 'Kain Furoshiki Parang 70cm',
-      serial: 'BHP-PRNG-7089',
-      origin: 'Yogyakarta Hadiningrat',
+      name: 'Gelora (Parang × Nami) 96cm',
+      serial: 'BHP-GLR-9603',
+      origin: 'Akulturasi Parang Rusak & Gelombang Nami',
       material: 'Katun Rayon Viscose (Jahit Neci Wolsum)',
-      recommendedTutorial: 'Carrier Botol Artistik',
+      recommendedTutorial: 'Tas Jinjing Bulat',
       icon: 'ph:wave-sine-duotone'
     }
   ];

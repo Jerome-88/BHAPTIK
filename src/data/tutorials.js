@@ -6,11 +6,11 @@ export const TUTORIALS = [
     category: 'Tas Jinjing',
     difficulty: 'Mudah',
     stepsCount: 5,
-    clothSize: 'Kain 70x70cm',
-    image: '/images/hero-bag.jpg',
+    clothSize: 'Kain 96×96 cm (Gelora L)',
+    image: '/images/tas.jpg',
     youtubeUrl: 'https://youtu.be/Jmp0JxnccMU?si=trgYRHi7TSX7RAVs',
     badge: 'Paling Populer',
-    description: 'Sempurna untuk belanja santai atau wadah bekal estetik tanpa jarum dan benang.',
+    description: 'Tas jinjing praktis berpadu motif Gelora (Parang × Nami) untuk belanja santai dan aktivitas harian tanpa jahitan.',
     steps: [
       {
         number: 1,
@@ -46,11 +46,11 @@ export const TUTORIALS = [
     category: 'Aksesori',
     difficulty: 'Mudah',
     stepsCount: 3,
-    clothSize: 'Kain 70x70cm',
+    clothSize: 'Kain 47×47 cm (Mekar S)',
     image: '/images/bandana.jpg',
     youtubeUrl: 'https://youtu.be/9vAKh46O1bw?si=J2YXcShLBxj6jVqV',
     badge: 'Tren Modern',
-    description: 'Kreasi bandana rambut dan scarf leher praktis bermotif sakura batik untuk sentuhan gaya harian.',
+    description: 'Kreasi bandana rambut dan scarf leher praktis bermotif Mekar (Kawung × Sakura) untuk sentuhan gaya anggun.',
     steps: [
       {
         number: 1,
@@ -71,21 +71,21 @@ export const TUTORIALS = [
   },
   {
     id: 'otsukai',
-    title: 'Bungkus Kado Klasik',
+    title: 'Bungkus Bekal Bento & Kado',
     japaneseTitle: 'Otsukai-tsutsumi',
     category: 'Bungkus Kado',
     difficulty: 'Sangat Mudah',
     stepsCount: 2,
-    clothSize: 'Sakura x Batik',
-    image: '/images/classic-gift.jpg',
+    clothSize: 'Kain 72×72 cm (Kelana M)',
+    image: '/images/burung - bento.png',
     youtubeUrl: 'https://youtu.be/dIW7OQeN_kE?si=s20rI-KGkcYx_B5w',
     badge: 'Elegan',
-    description: 'Simpul dasi kupu-kupu tradisional untuk menghadiahi bingkisan dengan makna doa tulus.',
+    description: 'Simpul dasi kupu-kupu tradisional berpadu motif Kelana (Mega Mendung × Tsuru) untuk membungkus bento atau bingkisan istimewa.',
     steps: [
       {
         number: 1,
         title: 'Bungkus Kotak Silang',
-        detail: 'Posisikan kotak kado di tengah kain. Tarik sudut bawah menutup kotak, lalu tarik sudut atas menimpa lipatan pertama.'
+        detail: 'Posisikan kotak kado atau bento di tengah kain. Tarik sudut bawah menutup kotak, lalu tarik sudut atas menimpa lipatan pertama.'
       },
       {
         number: 2,

@@ -1,66 +1,50 @@
 export const MOTIFS = [
   {
-    id: 'kawung',
+    id: 'mekar',
     code: '01',
-    name: 'Motif Kawung',
-    origin: 'Kasultanan Yogyakarta & Surakarta',
-    meaning: 'Kesucian Hati & Keadilan Pemimpin',
-    tagline: 'Perlambang Empat Penjuru Mata Angin & Keluhuran Budi',
-    image: '/images/kawung.jpg',
+    name: 'Mekar (Kawung × Sakura)',
+    origin: 'Akulturasi Nusantara & Jepang',
+    meaning: 'Kesucian Hati & Harapan yang Bersemi',
+    tagline: 'Harmoni Geometri Kawung Jawa dan Kelopak Sakura Jepang',
+    image: '/images/sakura.jpg',
     history:
-      'Berkembang sejak abad ke-13 di tanah Jawa, motif Kawung awalnya merupakan motif larangan (gehegan) yang hanya dikenakan oleh kalangan bangsawan dan abdi dalem yang berhati lurus dan bersih.',
+      'Lahir dari perpaduan motif sakral Kawung yang telah berkembang sejak era kerajaan Mataram dengan keanggunan bunga Sakura Jepang. Titik temu dua kebudayaan yang sama-sama memuliakan siklus alam dan kesederhanaan budi pekerti.',
     philosophy:
-      'Pola empat bulatan elips menyerupai irisan buah aren (kolang-kaling) yang berporos pada satu titik pusat. Melambangkan kesadaran diri menjaga kesucian hati, keadilan sosial, dan keseimbangan terhadap semesta serta Sang Pencipta.',
+      'Pola empat bulatan Kawung melambangkan kesucian hati, keadilan, dan penjagaan diri, sedangkan kelopak Sakura yang mekar merepresentasikan keindahan hidup, kerendahan hati, dan awal perjalanan yang penuh harapan.',
     momentRelevance:
-      'Bermakna luhur untuk bingkisan silaturahmi, hadiah pencapaian, dan tas bekal harian sebagai pengingat integritas diri.',
-    furoshikiPairing: 'Shizuku-tsutsumi (Tas Jinjing Bulat) untuk membawa ketulusan dalam aktivitas harian.'
+      'Pilihan istimewa untuk bandana harian, scarf leher, bingkisan persahabatan, atau tanda kasih penyemangat langkah baru.',
+    furoshikiPairing: 'Bandana Furoshiki Style & Scarf Leher (Ukuran S: 47 × 47 cm).'
   },
   {
-    id: 'parang',
+    id: 'kelana',
     code: '02',
-    name: 'Motif Parang Rusak',
-    origin: 'Keraton Mataram Islam (Yogyakarta)',
-    meaning: 'Pantang Menyerah & Keteguhan Jiwa',
-    tagline: 'Garis Miring Ombak Karang yang Tak Pernah Putus',
-    image: '/images/parang.jpg',
+    name: 'Kelana (Mega Mendung × Tsuru)',
+    origin: 'Pesisir Cirebon & Tradisi Jepang',
+    meaning: 'Keteduhan Jiwa & Kesetiaan Panjang Umur',
+    tagline: 'Awan Berarak Mega Mendung Mengiringi Kepak Sayap Bangau Tsuru',
+    image: '/images/burung.jpg',
     history:
-      'Diciptakan oleh Sultan Agung Hanyakrakusuma saat bertapa di pesisir Pantai Selatan Jawa, mengamati deburan ombak samudera yang gigih menghantam karang terjal tanpa henti.',
+      'Mengawinkan kekayaan batik Mega Mendung khas pesisir Cirebon yang sarat pengaruh akulturasi dengan Tsuru (burung bangau mahkota merah Jepang)—simbol suci perdamaian, kesetiaan abadi, dan umur panjang.',
     philosophy:
-      'Garis diagonal huruf S yang saling menjalin tanpa putus menyimbolkan kesinambungan perjuangan hidup, ketajaman budi pekerti, dan keteguhan batin menghadapi badai kehidupan.',
+      'Gradasi lapisan awan mengajarkan kesabaran, pengendalian ego, dan ketenangan batin, sementara burung bangau yang melintasi angkasa membawa pesan harapan luhur dan keharmonisan hidup.',
     momentRelevance:
-      'Sangat tepat dihadiahkan untuk kelulusan, perintisan usaha baru, promosi kepemimpinan, dan pelindung buku karya penting.',
-    furoshikiPairing: 'Hon-tsutsumi (Tas Pelindung Buku) atau Bin-tsutsumi (Carrier Botol Minuman).'
+      'Sangat ideal untuk wadah bekal bento keluarga, kado ulang tahun, hantaran pernikahan, dan ungkapan rasa syukur.',
+    furoshikiPairing: 'Otsukai-tsutsumi (Bungkus Bekal Bento & Kotak Kado Elegan - Ukuran M: 72 × 72 cm).'
   },
   {
-    id: 'truntum',
+    id: 'gelora',
     code: '03',
-    name: 'Motif Truntum',
-    origin: 'Kasunanan Surakarta Hadiningrat',
-    meaning: 'Cinta Kasih yang Bersemi Kembali',
-    tagline: 'Taburan Kembang Bintang Pembawa Kedamaian Jiwa',
-    image: '/images/truntum.jpg',
+    name: 'Gelora (Parang × Nami)',
+    origin: 'Keraton Mataram & Samudera Jepang',
+    meaning: 'Keteguhan Batin & Semangat Pantang Menyerah',
+    tagline: 'Garis Parang Tak Terputus Menembus Gulungan Ombak Nami',
+    image: '/images/ombak.jpg',
     history:
-      'Diciptakan oleh Kanjeng Ratu Kencana yang memandang keindahan taburan bintang di langit malam saat berikhtiar memulihkan keharmonisan dan kedamaian batin.',
+      'Memadukan motif Parang Rusak ciptaan Sultan Agung yang terinspirasi ombak karang Pantai Selatan dengan dinamika seni ombak Nami Jepang yang perkasa dan mentari terbit pembawa fajar baru.',
     philosophy:
-      'Kelopak kembang kecil menyerupai bintang berkelip melambangkan cinta tanpa pamrih yang terus mekar, bertumbuh kembali (tumaruntum), dan menghangatkan jiwa sesama.',
+      'Garis diagonal huruf S Parang melambangkan kesinambungan ikhtiar dan ketajaman budi, berpadu dengan deburan ombak biru yang melambangkan kekuatan menembus segala rintangan hidup.',
     momentRelevance:
-      'Pilihan utama untuk seserahan pernikahan, hadiah ulang tahun perkawinan, dan ungkapan kasih sayang tulus kepada sahabat.',
-    furoshikiPairing: 'Otsukai-tsutsumi (Bungkus Kado Klasik) dengan simpul pita anggun di bagian atas.'
-  },
-  {
-    id: 'megamendung',
-    code: '04',
-    name: 'Motif Mega Mendung',
-    origin: 'Cirebon, Jawa Barat',
-    meaning: 'Keteduhan, Kesabaran & Pengendalian Diri',
-    tagline: 'Awan Berlapis yang Membawa Keteduhan Hati',
-    image: '/images/megamendung.jpg',
-    history:
-      'Tumbuh dalam tradisi batik Cirebon, Mega Mendung dikenal melalui bentuk awan berlapis yang kuat dan dinamis. Coraknya mencerminkan pertemuan budaya pesisir Cirebon dengan pengaruh seni Tiongkok yang kemudian diolah menjadi identitas lokal.',
-    philosophy:
-      'Lapisan awan dan gradasi warnanya melambangkan keteduhan, kesabaran, serta kemampuan menahan amarah. Alurnya mengingatkan bahwa hidup selalu bergerak, namun hati perlu tetap tenang dalam menghadapi perubahan.',
-    momentRelevance:
-      'Cocok untuk hadiah penyemangat, ungkapan damai, apresiasi kepada sosok pembimbing, atau bingkisan bagi seseorang yang sedang memasuki babak baru.',
-    furoshikiPairing: 'Otsukai-tsutsumi atau Bin-tsutsumi agar alur awan Mega Mendung tetap terlihat utuh dan mengalir.'
+      'Sangat tepat untuk tas jinjing bepergian, kado kelulusan, perintisan karya baru, dan pelindung buku karya berharga.',
+    furoshikiPairing: 'Shizuku-tsutsumi (Tas Jinjing Bulat Serbaguna - Ukuran L: 96 × 96 cm).'
   }
 ];

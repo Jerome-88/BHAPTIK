@@ -196,8 +196,8 @@ export default function Philosophy() {
             <div className="lg:col-span-5">
               <div className="rounded-2xl overflow-hidden border border-[#E6DFD5] aspect-[4/3] relative bg-[#F5F0EB]">
                 <img
-                  src="/images/hero-bag.jpg"
-                  alt="Kain BHAPTIK Furoshiki dalam penggunaan harian"
+                  src="/images/burung - bento.png"
+                  alt="Penggunaan kain BHAPTIK Furoshiki motif Kelana untuk wadah bekal harian"
                   className="w-full h-full object-cover"
                 />
               </div>

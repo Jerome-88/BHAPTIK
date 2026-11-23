@@ -23,7 +23,7 @@ export default function Navbar({ onOpenQR, qrEnabled = false }) {
           <img
             src="/images/logo.png"
             alt="BHAPTIK Logo"
-            className="brand-mark h-9 w-auto object-contain"
+            className="brand-mark h-11 w-auto object-contain"
           />
         </a>
 
